@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d8M-HX-e1B">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jake Wharton Github -->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RepositoryViewController" customModule="JakeGithubRepositories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0yL-Id-Lri">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="repositoryCell" rowHeight="115" id="HgZ-c8-W7S" customClass="RepositoryTableViewCell" customModule="JakeGithubRepositories" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="115"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HgZ-c8-W7S" id="jbP-rS-Xrw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="114.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0h-oA-5hw">
+                                                    <rect key="frame" x="15" y="11" width="345" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJB-Ps-WfJ">
+                                                    <rect key="frame" x="15" y="39.5" width="345" height="39.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tjo-zH-wr5">
+                                                    <rect key="frame" x="15" y="87" width="345" height="17"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvO-jn-ONB">
+                                                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6Y-X2-gl7">
+                                                            <rect key="frame" x="172.5" y="0.0" width="172.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Tjo-zH-wr5" firstAttribute="bottom" secondItem="jbP-rS-Xrw" secondAttribute="bottomMargin" id="0ab-4t-ChG"/>
+                                                <constraint firstItem="fJB-Ps-WfJ" firstAttribute="trailing" secondItem="jbP-rS-Xrw" secondAttribute="trailingMargin" id="0pt-zp-vGr"/>
+                                                <constraint firstItem="Tjo-zH-wr5" firstAttribute="leading" secondItem="jbP-rS-Xrw" secondAttribute="leadingMargin" id="6CJ-dE-xyb"/>
+                                                <constraint firstItem="d0h-oA-5hw" firstAttribute="leading" secondItem="jbP-rS-Xrw" secondAttribute="leadingMargin" id="7De-v3-PSH"/>
+                                                <constraint firstItem="Tjo-zH-wr5" firstAttribute="trailing" secondItem="jbP-rS-Xrw" secondAttribute="trailingMargin" id="9PJ-hV-3St"/>
+                                                <constraint firstItem="d0h-oA-5hw" firstAttribute="trailing" secondItem="jbP-rS-Xrw" secondAttribute="trailingMargin" id="KBW-Je-aa1"/>
+                                                <constraint firstItem="fJB-Ps-WfJ" firstAttribute="leading" secondItem="jbP-rS-Xrw" secondAttribute="leadingMargin" id="RhW-Zb-7KV"/>
+                                                <constraint firstItem="d0h-oA-5hw" firstAttribute="top" secondItem="jbP-rS-Xrw" secondAttribute="topMargin" id="Uit-fb-zcH"/>
+                                                <constraint firstItem="Tjo-zH-wr5" firstAttribute="top" secondItem="fJB-Ps-WfJ" secondAttribute="bottom" constant="8" id="dHO-gK-zSL"/>
+                                                <constraint firstItem="fJB-Ps-WfJ" firstAttribute="top" secondItem="d0h-oA-5hw" secondAttribute="bottom" constant="8" id="hWH-sq-akc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="repositoryDateUpdate" destination="J6Y-X2-gl7" id="QHx-7K-DBf"/>
+                                            <outlet property="repositoryDescription" destination="fJB-Ps-WfJ" id="Z4B-Mb-T0Y"/>
+                                            <outlet property="repositoryLanguage" destination="dvO-jn-ONB" id="XmZ-qx-KRP"/>
+                                            <outlet property="repositoryName" destination="d0h-oA-5hw" id="Jfr-6d-eY6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0yL-Id-Lri" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ihf-Kc-4gA"/>
+                            <constraint firstItem="0yL-Id-Lri" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KRF-PS-Wni"/>
+                            <constraint firstItem="0yL-Id-Lri" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZWh-eG-lqP"/>
+                            <constraint firstItem="0yL-Id-Lri" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qZN-yK-UYh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Jake Wharton Github " id="4Ls-4e-ctK"/>
+                    <connections>
+                        <outlet property="repositoryTB" destination="0yL-Id-Lri" id="x9k-Pe-edK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MNo-kM-xgc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d8M-HX-e1B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="2sH-az-BRy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pni-iL-3ok"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mC1-fV-2hm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>

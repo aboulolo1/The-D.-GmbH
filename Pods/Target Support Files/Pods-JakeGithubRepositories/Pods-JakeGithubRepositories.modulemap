@@ -1,0 +1,6 @@
+framework module Pods_JakeGithubRepositories {
+  umbrella header "Pods-JakeGithubRepositories-umbrella.h"
+
+  export *
+  module * { export * }
+}
