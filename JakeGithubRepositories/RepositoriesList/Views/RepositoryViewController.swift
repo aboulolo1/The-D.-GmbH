@@ -100,5 +100,11 @@ extension RepositoryViewController:UITableViewDelegate,UITableViewDataSource{
         }
 
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let repositoryModel = self.repositoryViewModel?.getRepositoryAtIndex(index: indexPath.row)
+        if let url = URL(string: (repositoryModel?.htmlUrl)!) {
+            UIApplication.shared.open(url)
+        }
+    }
     
 }
